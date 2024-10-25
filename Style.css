@@ -1,0 +1,395 @@
+
+html {
+    scroll-behavior: smooth; /* Optional, for CSS-only smooth scrolling */
+}
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            background-color: #e5e1dcb0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+      /* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+nav.dark-mode, footer.dark-mode {
+    background-color: #1c1c1c; /* Darker nav and footer */
+}
+
+.profile.dark-mode {
+    background: linear-gradient(135deg, #373636, #1c1c1c); /* Dark gradient */
+    
+}
+
+.about-me.dark-mode,
+.experience.dark-mode,
+.projects.dark-mode,
+.contact.dark-mode {
+    /* background: linear-gradient(135deg, #3c3c3c, #1c1c1c); */
+    background-color: #1c1c1c; /* Dark background for sections */
+    color: #e0e0e0; /* Light text color */
+}
+
+
+
+
+
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #cb8205;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your nav height */
+        left: 0;
+        background-color: #333; /* Same background as nav */
+        width: 100%; /* Full width */
+        z-index: 99; /* Ensure it appears above other content */
+    }
+
+    nav ul.show {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+}
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #cb8205;
+        }
+
+        /* nav .btn {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        } */
+
+        nav .btn:hover {
+            background-color: #cb8205;
+        }
+
+        /* Dark Mode Toggle Button */
+        .dark-mode-btn {
+            padding: 10px 20px;
+            background-color: #cb8205;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+    .profile, .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+        /* Profile Section with Soft Gradient Background */
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 80px;
+            background: linear-gradient(135deg, #2a2928, #f4b659); /* Soft Gradient */
+            color: white;
+            min-height: 100vh;
+            transition: background 0.5s ease;
+        }
+
+        /* Profile photo animation */
+        .profile img {
+            width: 330px;
+            height: 350px;
+            border-radius: 50%;
+            /* object-fit: c; */
+            border: 4px solid white;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform-style: preserve-3d;
+        }
+
+        /* Animation on hover */
+        .profile img:hover {
+    transform: rotateY(180deg); /* Flipping the image on hover */
+}
+
+        /* Profile details */
+        .profile-details {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .profile-details h1 {
+            margin-top: 0;
+            font-size: 48px;
+        }
+
+        .profile-details p {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+
+        .profile-details .buttons {
+            margin-top: 30px;
+        }
+
+        .profile-details .buttons button {
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #cb8205;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .profile-details .buttons button:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        /* About Me Section */
+        .about-me {
+            padding: 100px 20px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-me img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-me-content {
+            max-width: 600px;
+        }
+
+        .about-me-content h2 {
+            font-size: 34px;
+            margin-bottom: 25px;
+            color: #cb8205;
+        }
+
+        .about-me-content p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        
+
+        /* Experience Section */
+        .projects, .experience,  .contact {
+            padding: 70px 20px;
+            /* background: linear-gradient(135deg, #f4b659, #2a2928); */
+            background-color: #f7f7f7;
+        }
+/* 
+       .projects {
+            background: linear-gradient(135deg, #2a2928, #f4b659);
+            background-color: #e0dcdc;
+        } */
+
+        .experience h2, .projects h2, .contact h2 {
+            margin-bottom: 25px;
+            font-size: 34px;
+            color: #cb8205;
+        }
+
+        .experience ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .experience ul li {
+            margin: 10px 0;
+            font-size: 20px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .skill span {
+            font-size: 18px;
+            width: 30%; /* Adjust as needed */
+        }
+        
+        .bar {
+            height: 15px;
+            background-color: #96bab891; /* Change the color of the bar as desired */
+            border-radius: 8px;
+            transition: width 0.5s ease; /* Smooth transition for the bar */
+        }
+        
+
+        /* Projects Section */
+        .projects ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .projects ul li {
+            margin-bottom: 10px;
+            font-size: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .projects ul li:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects ul li img {
+            width: 100%;
+            height: 310px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact form button {
+            padding: 15px;
+            background-color: #cb8205;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Section animations */
+        section {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.6s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Contact Me button scroll behavior */
+        .scroll-to-contact {
+            cursor: pointer;
+        }
+    

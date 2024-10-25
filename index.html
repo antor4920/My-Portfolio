@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antor's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+ 
+       
+</head>
+<body>
+
+   
+    <!-- Navigation Bar -->
+<nav>
+    <div class="logo">Antor's Portfolio</div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul id="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience & skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="dark-mode-btn" id="dark-mode-toggle">Dark mood </button>
+</nav>
+
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile">
+        <img src="image/182-137.jpg" alt="Antor's Profile Photo"> <!-- Replace with your profile photo -->
+        <div class="profile-details">
+            <h1>Hi, I'm Jahidul Hasan</h1>
+            <p>I am a frontend developer, passionate about creating interactive web experiences.</p>
+            <div class="buttons">
+                <button   onclick="window.open('./image/CV.pdf ')"><i class="fa fa-download" ></i> Download CV</button>
+                <button class="scroll-to-contact">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <img src="image/182-137.jpg" alt="About Me"> <!-- Replace with your about photo -->
+        <div class="about-me-content">
+            <h2>About</h2>
+            <p style=" text-align: justify;
+ " >I'm a frontend developer with a passion for crafting beautiful and user-friendly websites. I have a strong foundation in JavaScript, React JS, HTML & CSS/Tailwind, and I love building responsive and interactive user interfaces. <br> I have Completed my Bachelor Degree From Maharishi Markandeshwar University, India.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li style=" text-align: justify;
+ ">Intern as a Frontend Developer at Verzeo, India. Gain professional knowledge about Flutter and Dart.</li>
+            <li>Created several responsive websites During Bachelor Program.</li>
+          
+        </ul>
+        <h2>Skills</h2>
+<div class="skills">
+    <div class="skill">
+        <span>React JS</span>
+        <div class="bar" style="width: 60%;"></div>
+    </div>
+    <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar" style="width: 70%;"></div>
+    </div>
+    
+    <div class="skill">
+        <span>Flutter</span>
+        <div class="bar" style="width: 50%;"></div>
+    </div>
+    <div class="skill">
+        <span>Dart</span>
+        <div class="bar" style="width: 60%;"></div>
+    </div>
+    <div class="skill">
+        <span>Node Js</span>
+        <div class="bar" style="width: 55%;"></div>
+    </div>
+</div>
+
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/antor4920/E-Commerce" target="_blank"><img src="image/project-1.png" alt="E-commerce Website" ></a> <!-- Replace with project image -->
+                E-commerce Website
+            </li>
+            <li>
+               <a href=""><img src="image/project-2.png" alt="Online Grocery App"></a>  <!-- Replace with project image -->
+                Online Grocery App
+            </li>
+            <li>
+               <a href="https://github.com/antor4920/bmi_cal" target="_blank"><img src="image/project-3.png" alt="Portfolio Website"></a>  <!-- Replace with project image -->
+                Portfolio Website
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Antor's Portfolio
+    </footer>
+
+    <!-- JavaScript for scroll and dark mode toggle -->
+    <script src="index.js"></script>
+   
+
+</body>
+</html>
