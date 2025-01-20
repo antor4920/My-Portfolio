@@ -270,9 +270,10 @@ nav.dark-mode, footer.dark-mode {
 
         .experience ul li {
             margin: 10px 0;
-            font-size: 20px;
+            font-size: 18px;
             background-color: white;
-            padding: 15px;
+            padding: 30px;
+           
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
         }
